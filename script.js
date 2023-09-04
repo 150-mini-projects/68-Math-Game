@@ -43,7 +43,7 @@ const questionGenerator = () => {
     let userInput = document.getElementById("inputValue").value;
     if (userInput) {
       if (userInput == answerValue) {
-        stopGame(`Yippie!! <span>Correct</span> Answer`);
+        stopGame(`YAY!! <span>Correct</span> Answer`);
       } else if (operatorQuestion && !operators.includes(userInput)) {
         errorMessage.classList.remove("hide");
         errorMessage.innerHTML = "Please enter a valid operator";
